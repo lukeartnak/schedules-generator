@@ -1,0 +1,432 @@
+html {
+  font: 16px Roboto;
+  overflow-y: scroll;
+}
+
+header {
+  background: #3F51B5;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  flex: 1;
+  margin: 0;
+  color: #fff;
+}
+
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+header nav .active {
+  border-bottom: 2px solid #fff;
+}
+
+.generator {
+}
+
+.nav {
+  display: flex;
+  background: #3949AB;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-item {
+  flex: 1;
+  padding: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-item:hover:not(.nav-active) {
+  background: #3949AB;
+}
+
+.nav-active {
+  background: #303F9F;
+}
+
+.generator-section {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.course, .course-editor {
+  width: 700px;
+  margin: 20px;
+  border: 1px solid #eee;
+  color: #555;
+}
+
+.course-add {
+  width: 90%;
+  margin: 20px auto;
+  background: #f5f5f5;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.course-add .fa {
+  margin-right: 5px;
+}
+
+.course-header, .course-editor-header {
+  background: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.course-name {
+  font-size: 1.25rem;
+  flex: 1;
+}
+
+.course-edit {
+  color: #aaa;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.course-edit:hover {
+  color: #555;
+}
+
+.course-section {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.course-editor-section {
+  padding: 10px 5px;
+  border-top: 1px solid #eee;
+}
+
+.course-editor-footer {
+  border-top: 1px solid #eee;
+}
+
+.course-footer {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.footer-toolbar {
+  display: flex;
+  text-align: center;
+}
+
+.footer-confirmation {
+  color: #fff;
+  background: #F44336;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.footer-confirmation span {
+  flex: 1;
+}
+
+.footer-confirmation button {
+  border: 1px solid #fff;;
+  background: #F44336;
+  margin: 5px;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.course-code-form {
+  width: 110px;
+  font-size: 1.25rem;
+}
+
+.course-name-form {
+  font-size: 1.25rem;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.section-add {
+  flex: 1;
+  padding: 10px;
+  color: #4CAF50;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
+
+.section-add:hover {
+  background: #66BB6A;
+  color: #fff;
+}
+
+.course-delete {
+  flex: 1;
+  padding: 10px;
+  color: #F44336;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
+
+.course-delete:hover {
+  background: #ef5350;
+  color: #fff;
+}
+
+.course-done {
+  flex: 1;
+  padding: 10px;
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.course-done:hover {
+  background: #42A5F5;
+  color: #fff;
+}
+
+.editor-group {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.editor-input {
+  padding: 5px;
+  color: #555;
+  border: 1px solid #ddd;
+  width: 75px;
+}
+
+.editor-input:focus {
+  outline: none;
+}
+
+.time-suggestions {
+  position: absolute;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-top: none;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.time-suggestion {
+  padding: 5px;
+  width: 75px;
+}
+
+.time-suggestion:hover {
+  color: #fff;
+  background: #5C6BC0;
+}
+
+.section-day {
+  padding: 5px 0;
+  width: 35px;
+  background: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+  border-right: none;
+  cursor: pointer;
+}
+
+.section-day.selected {
+  background: #5C6BC0;
+  color: #fff;
+}
+
+.section-day:focus {
+  outline: none;
+}
+
+.section-day:last-of-type {
+  border-right: 1px solid #ddd;
+}
+
+.section-delete {
+  padding: 5px;
+  color: #F44336;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.section-delete:focus {
+  outline: none;
+}
+
+.section-delete:hover {
+  color: #D32F2F;
+}
+
+.filter-group {
+  margin: 20px auto;
+  color: #555;
+  border: 1px solid #eee;
+}
+
+.filter-group-header {
+  padding: 10px;
+  background: #f5f5f5;
+  font-size: 1.25rem;
+}
+
+.filter {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.filter-editor {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.editor-dropdown {
+  background: #fff;
+  color: #555;
+}
+
+.editor-dropdown .fa {
+  float: right;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.dropdown-selected {
+  display: block;
+  border: 1px solid #ddd;
+  width: 120px;
+  padding: 5px;
+  cursor: default;
+}
+
+.dropdown-options {
+  position: absolute;
+  border: 1px solid #ddd;
+  border-top: none;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-option {
+  display: block;
+  width: 120px;
+  padding: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  color: #fff;
+  background: #5C6BC0;
+}
+
+.schedule {
+  min-width: 350px;
+  max-width: 550px;
+  flex: 1;
+  margin: 20px;
+  border: 1px solid #eee;
+  color: #555;
+}
+
+.schedule-header {
+  background: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.schedule-name {
+  flex: 1;
+}
+
+.schedule-header .fa {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.schedule-header .fa:hover {
+  color: #aaa;
+}
+
+.schedule-header .fa.saved {
+  color: #FDD835;
+}
+
+.schedule-course {
+  display: flex;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.schedule-course-name {
+  padding: 10px;
+  flex: 1;
+  border-right: 1px solid #eee;
+}
+
+.schedule-course-time {
+  padding: 10px;
+  flex: 2;
+}
+
+.schedules-generate {
+  border: none;
+  background: #4CAF50;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  margin: 20px;
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.page {
+  background: #fff;
+  border: 1px solid #eee;
+  border-right: none;
+  width: 30px;
+  padding: 5px 0;
+  color: #555;
+}
+
+.page.selected {
+  background: #5C6BC0;
+  color: #fff;
+}
+
+.page:focus {
+  outline: none;
+}
+
+.page:last-of-type {
+  border-right: 1px solid #eee;
+}
