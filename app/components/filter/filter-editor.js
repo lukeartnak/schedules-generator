@@ -1,10 +1,10 @@
 import React from 'react';
 
-import EditorDropdown from './editor-dropdown';
-import TimeInput from './time-input';
-import DaysInput from './days-input';
+import EditorDropdown from 'components/editor-dropdown';
+import TimeInput from 'components/time-input';
+import DaysInput from 'components/days-input';
 
-import {toTime, toMinutes} from '../lib/time';
+import {toTime, toMinutes} from 'lib/time';
 
 export default class FilterEditor extends React.Component {
 

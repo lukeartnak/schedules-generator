@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {getPossibleTimes} from '../lib/time';
+import {getPossibleTimes} from 'lib/time';
 
 export default class TimeInput extends React.Component {
 

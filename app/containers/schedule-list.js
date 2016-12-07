@@ -1,10 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {saveSchedule, removeSchedule} from '../redux/actions';
-import {getFilteredSchedules, getValidSchedules} from '../redux/selector';
+import {saveSchedule, removeSchedule} from 'redux/actions';
+import {getFilteredSchedules, getValidSchedules} from 'redux/selector';
 
-import Schedule from './schedule';
+import Schedule from 'components/schedule';
 
 class ScheduleList extends React.Component {
 

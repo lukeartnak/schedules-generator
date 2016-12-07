@@ -1,18 +1,23 @@
+var path = require('path');
+
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './app/index.js',
   output: {
     path: './build',
     filename: 'app.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    root: path.resolve('./app'),
+    extensions: ['', '.js']
   },
   module: {
     loaders: [{
-      test: /\.jsx$/,
+      test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel',
-      query: {presets: ['react', 'es2015']}
+      query: {
+        presets: ['es2015', 'react']
+      }
     }]
   }
 }

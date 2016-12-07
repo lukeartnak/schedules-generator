@@ -2,11 +2,11 @@ import React from 'react';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {changeCourse, deleteCourse, createSection, changeSection, deleteSection} from '../../redux/actions';
+import {changeCourse, deleteCourse, createSection, changeSection, deleteSection} from 'redux/actions';
 
-import CourseEditorHeader from './course-editor-header';
-import CourseEditorSection from './course-editor-section';
-import CourseEditorFooter from './course-editor-footer';
+import CourseEditorHeader from 'components/course/course-editor-header';
+import CourseEditorSection from 'components/course/course-editor-section';
+import CourseEditorFooter from 'components/course/course-editor-footer';
 
 class CourseEditor extends React.Component {
 

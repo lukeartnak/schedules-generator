@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import FilterGroup from './filter-group';
+import FilterGroup from 'components/filter/filter-group';
 
 class FilterList extends React.Component {
 

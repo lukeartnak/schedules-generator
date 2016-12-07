@@ -1,8 +1,10 @@
 {
   "name": "schedule-generator",
+  "description": "web application to help students create the perfect schedule",
+  "author": "Luke Artnak",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack build --watch"
+    "start": "webpack --watch"
   },
   "dependencies": {
     "react": "^15.2.0",
