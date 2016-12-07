@@ -31,7 +31,10 @@ header nav .active {
   border-bottom: 2px solid #fff;
 }
 
-.generator {
+.generator-section {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -56,10 +59,12 @@ header nav .active {
   background: #303F9F;
 }
 
-.generator-section {
-  width: 90%;
-  max-width: 700px;
-  margin: 0 auto;
+.course-list {
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;;
 }
 
 .course, .course-editor {
@@ -276,6 +281,12 @@ header nav .active {
   color: #D32F2F;
 }
 
+.filter-list {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .filter-group {
   margin: 20px auto;
   color: #555;
@@ -339,6 +350,14 @@ header nav .active {
 .dropdown-option:hover {
   color: #fff;
   background: #5C6BC0;
+}
+
+.schedule-list {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .schedule {

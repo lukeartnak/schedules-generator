@@ -1,15 +1,7 @@
-var webpack = require('webpack');
-var path = require('path');
-
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://0.0.0.0:8080',
-    'webpack/hot/only-dev-server',
-    './src/index.jsx'
-  ],
+  entry: './src/index.jsx',
   output: {
-    path: __dirname,
-    publicPath: '/',
+    path: './build',
     filename: 'app.js'
   },
   resolve: {
@@ -17,16 +9,10 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
-      include: path.join(__dirname, 'src'),
-      loaders: ['react-hot', 'babel']
-    },
-    {
-       test: /\.scss$/,
-       loaders: ["style", "css", "sass"]
+      test: /\.jsx$/,
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {presets: ['react', 'es2015']}
     }]
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
-};
+  }
+}

@@ -2,10 +2,9 @@
   "name": "schedule-generator",
   "version": "1.0.0",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "webpack build --watch"
   },
   "dependencies": {
-    "js-base64": "^2.1.9",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "react-redux": "^4.4.5",
@@ -17,10 +16,6 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
-    "node-sass": "^3.11.1",
-    "react-hot-loader": "^1.3.0",
-    "sass-loader": "^4.0.2",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.13.1"
   }
 }

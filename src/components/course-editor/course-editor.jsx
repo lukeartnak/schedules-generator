@@ -8,7 +8,7 @@ import CourseEditorHeader from './course-editor-header';
 import CourseEditorSection from './course-editor-section';
 import CourseEditorFooter from './course-editor-footer';
 
-export default class CourseEditor extends React.Component {
+class CourseEditor extends React.Component {
 
   render() {
     return (
