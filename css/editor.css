@@ -1,0 +1,54 @@
+.editor-group {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.editor-input {
+  padding: 5px;
+  color: #555;
+  border: 1px solid #ddd;
+  width: 75px;
+}
+
+.editor-input:focus {
+  outline: none;
+}
+
+.editor-dropdown {
+  background: #fff;
+  color: #555;
+}
+
+.editor-dropdown .fa {
+  float: right;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.dropdown-selected {
+  display: block;
+  border: 1px solid #ddd;
+  width: 120px;
+  padding: 5px;
+  cursor: default;
+}
+
+.dropdown-options {
+  position: absolute;
+  border: 1px solid #ddd;
+  border-top: none;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-option {
+  display: block;
+  width: 120px;
+  padding: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  color: #fff;
+  background: #5C6BC0;
+}
